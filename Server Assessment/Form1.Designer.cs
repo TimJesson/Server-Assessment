@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.txtAddCustomer = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtAddMovie = new System.Windows.Forms.TextBox();
+            this.txtDeleteMovie = new System.Windows.Forms.TextBox();
             this.btnAddCustomer = new System.Windows.Forms.Button();
             this.btnAddMovie = new System.Windows.Forms.Button();
             this.btnDeleteMovie = new System.Windows.Forms.Button();
@@ -45,41 +45,41 @@
             this.btnReturnMovie = new System.Windows.Forms.Button();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.CustomersDGV = new System.Windows.Forms.DataGridView();
-            this.MoviesDGV = new System.Windows.Forms.DataGridView();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.RentalsDGV = new System.Windows.Forms.DataGridView();
+            this.Customers = new System.Windows.Forms.TabPage();
+            this.DGVCustomers = new System.Windows.Forms.DataGridView();
+            this.Movies = new System.Windows.Forms.TabPage();
+            this.DGVMovies = new System.Windows.Forms.DataGridView();
+            this.Rentals = new System.Windows.Forms.TabPage();
+            this.DGVRentals = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CustomersDGV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MoviesDGV)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RentalsDGV)).BeginInit();
+            this.Customers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVCustomers)).BeginInit();
+            this.Movies.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVMovies)).BeginInit();
+            this.Rentals.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVRentals)).BeginInit();
             this.SuspendLayout();
             // 
             // txtAddCustomer
             // 
-            this.txtAddCustomer.Location = new System.Drawing.Point(119, 381);
+            this.txtAddCustomer.Location = new System.Drawing.Point(119, 378);
             this.txtAddCustomer.Name = "txtAddCustomer";
             this.txtAddCustomer.Size = new System.Drawing.Size(247, 20);
             this.txtAddCustomer.TabIndex = 0;
             // 
-            // textBox2
+            // txtAddMovie
             // 
-            this.textBox2.Location = new System.Drawing.Point(119, 407);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(247, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtAddMovie.Location = new System.Drawing.Point(119, 410);
+            this.txtAddMovie.Name = "txtAddMovie";
+            this.txtAddMovie.Size = new System.Drawing.Size(247, 20);
+            this.txtAddMovie.TabIndex = 1;
             // 
-            // textBox3
+            // txtDeleteMovie
             // 
-            this.textBox3.Location = new System.Drawing.Point(119, 433);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(247, 20);
-            this.textBox3.TabIndex = 2;
+            this.txtDeleteMovie.Location = new System.Drawing.Point(119, 440);
+            this.txtDeleteMovie.Name = "txtDeleteMovie";
+            this.txtDeleteMovie.Size = new System.Drawing.Size(247, 20);
+            this.txtDeleteMovie.TabIndex = 2;
             // 
             // btnAddCustomer
             // 
@@ -128,35 +128,35 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(383, 381);
+            this.textBox4.Location = new System.Drawing.Point(383, 378);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(177, 20);
             this.textBox4.TabIndex = 8;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(383, 407);
+            this.textBox5.Location = new System.Drawing.Point(383, 410);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(128, 20);
             this.textBox5.TabIndex = 9;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(383, 433);
+            this.textBox6.Location = new System.Drawing.Point(383, 440);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(128, 20);
             this.textBox6.TabIndex = 10;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(579, 381);
+            this.textBox7.Location = new System.Drawing.Point(586, 378);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(128, 20);
             this.textBox7.TabIndex = 11;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(530, 407);
+            this.textBox8.Location = new System.Drawing.Point(535, 410);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(128, 20);
             this.textBox8.TabIndex = 12;
@@ -181,78 +181,78 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(119, 355);
+            this.textBox9.Location = new System.Drawing.Point(119, 352);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(39, 20);
             this.textBox9.TabIndex = 16;
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.Customers);
+            this.tabControl1.Controls.Add(this.Movies);
+            this.tabControl1.Controls.Add(this.Rentals);
             this.tabControl1.Location = new System.Drawing.Point(45, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(809, 314);
             this.tabControl1.TabIndex = 17;
             // 
-            // tabPage1
+            // Customers
             // 
-            this.tabPage1.Controls.Add(this.CustomersDGV);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(801, 288);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.Customers.Controls.Add(this.DGVCustomers);
+            this.Customers.Location = new System.Drawing.Point(4, 22);
+            this.Customers.Name = "Customers";
+            this.Customers.Padding = new System.Windows.Forms.Padding(3);
+            this.Customers.Size = new System.Drawing.Size(801, 288);
+            this.Customers.TabIndex = 0;
+            this.Customers.Text = "Customers";
+            this.Customers.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // DGVCustomers
             // 
-            this.tabPage2.Controls.Add(this.MoviesDGV);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(801, 288);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.DGVCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVCustomers.Location = new System.Drawing.Point(0, 0);
+            this.DGVCustomers.Name = "DGVCustomers";
+            this.DGVCustomers.Size = new System.Drawing.Size(801, 288);
+            this.DGVCustomers.TabIndex = 0;
             // 
-            // CustomersDGV
+            // Movies
             // 
-            this.CustomersDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CustomersDGV.Location = new System.Drawing.Point(0, 0);
-            this.CustomersDGV.Name = "CustomersDGV";
-            this.CustomersDGV.Size = new System.Drawing.Size(801, 288);
-            this.CustomersDGV.TabIndex = 0;
+            this.Movies.Controls.Add(this.DGVMovies);
+            this.Movies.Location = new System.Drawing.Point(4, 22);
+            this.Movies.Name = "Movies";
+            this.Movies.Padding = new System.Windows.Forms.Padding(3);
+            this.Movies.Size = new System.Drawing.Size(801, 288);
+            this.Movies.TabIndex = 1;
+            this.Movies.Text = "Movies";
+            this.Movies.UseVisualStyleBackColor = true;
             // 
-            // MoviesDGV
+            // DGVMovies
             // 
-            this.MoviesDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.MoviesDGV.Location = new System.Drawing.Point(0, 0);
-            this.MoviesDGV.Name = "MoviesDGV";
-            this.MoviesDGV.Size = new System.Drawing.Size(801, 288);
-            this.MoviesDGV.TabIndex = 0;
+            this.DGVMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVMovies.Location = new System.Drawing.Point(0, 0);
+            this.DGVMovies.Name = "DGVMovies";
+            this.DGVMovies.Size = new System.Drawing.Size(801, 288);
+            this.DGVMovies.TabIndex = 0;
             // 
-            // tabPage3
+            // Rentals
             // 
-            this.tabPage3.Controls.Add(this.RentalsDGV);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(801, 288);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.Rentals.Controls.Add(this.DGVRentals);
+            this.Rentals.Location = new System.Drawing.Point(4, 22);
+            this.Rentals.Name = "Rentals";
+            this.Rentals.Padding = new System.Windows.Forms.Padding(3);
+            this.Rentals.Size = new System.Drawing.Size(801, 288);
+            this.Rentals.TabIndex = 2;
+            this.Rentals.Text = "Rentals";
+            this.Rentals.UseVisualStyleBackColor = true;
             // 
-            // RentalsDGV
+            // DGVRentals
             // 
-            this.RentalsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.RentalsDGV.Location = new System.Drawing.Point(0, 0);
-            this.RentalsDGV.Name = "RentalsDGV";
-            this.RentalsDGV.Size = new System.Drawing.Size(801, 288);
-            this.RentalsDGV.TabIndex = 0;
+            this.DGVRentals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVRentals.Location = new System.Drawing.Point(0, 0);
+            this.DGVRentals.Name = "DGVRentals";
+            this.DGVRentals.Size = new System.Drawing.Size(801, 288);
+            this.DGVRentals.TabIndex = 0;
             // 
             // Form1
             // 
@@ -273,18 +273,18 @@
             this.Controls.Add(this.btnDeleteMovie);
             this.Controls.Add(this.btnAddMovie);
             this.Controls.Add(this.btnAddCustomer);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtDeleteMovie);
+            this.Controls.Add(this.txtAddMovie);
             this.Controls.Add(this.txtAddCustomer);
             this.Name = "Form1";
             this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.CustomersDGV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MoviesDGV)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.RentalsDGV)).EndInit();
+            this.Customers.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGVCustomers)).EndInit();
+            this.Movies.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGVMovies)).EndInit();
+            this.Rentals.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGVRentals)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,8 +293,8 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtAddCustomer;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtAddMovie;
+        private System.Windows.Forms.TextBox txtDeleteMovie;
         private System.Windows.Forms.Button btnAddCustomer;
         private System.Windows.Forms.Button btnAddMovie;
         private System.Windows.Forms.Button btnDeleteMovie;
@@ -309,12 +309,12 @@
         private System.Windows.Forms.Button btnReturnMovie;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DataGridView CustomersDGV;
-        private System.Windows.Forms.DataGridView MoviesDGV;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.DataGridView RentalsDGV;
+        private System.Windows.Forms.TabPage Customers;
+        private System.Windows.Forms.TabPage Movies;
+        private System.Windows.Forms.DataGridView DGVCustomers;
+        private System.Windows.Forms.DataGridView DGVMovies;
+        private System.Windows.Forms.TabPage Rentals;
+        private System.Windows.Forms.DataGridView DGVRentals;
     }
 }
 
